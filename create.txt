@@ -1,0 +1,12 @@
+create database salon;
+use salon;
+create table services( services_id int(11) primary key,
+services_name varchar(255),
+price float);
+
+create table clients(client_id int(11) primary key,client_name varchar(255),phone varchar(255), email varchar(255), login varchar(255),password varchar(255));
+
+
+create table employees (employee_id int(11) primary key,employee_name varchar(255),position varchar(255), phone varchar(255));
+
+create table records(record_id int(11) primary key,services_id int(11), client int(11) primary key, employeer int (11),time datetime);
